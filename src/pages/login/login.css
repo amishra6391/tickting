@@ -1,0 +1,60 @@
+.loging{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(237, 240, 243);
+}
+.formLogin{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #c9c9f1;
+    height: 300px;
+    width: 450px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.loginh1{
+    margin: 25px;
+}
+.inputLogin,.Loginbtm{
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    font-size: large;
+    border: .5px solid black;
+    
+}
+.Loginbtm{
+    border: none;
+    background-color: green;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+    margin-top: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.Loginbtm:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.loginSpan{
+    color: #ff0101de;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.register{
+    border: none;
+   background: transparent;
+   cursor: pointer;
+   color: blue;
+   font-size: medium;
+}
+.plogin{
+    margin-top: 15px;
+}
+a{
+    text-decoration: none;
+}

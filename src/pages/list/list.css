@@ -1,0 +1,27 @@
+.profile{
+    margin: 25px;
+    display: flex;
+    width: 40Vw;
+    flex-direction: column;
+}
+.h1List{
+    text-align: center;
+    color: rgb(41, 41, 87);
+}
+.imaga{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(197, 206, 206);
+}
+.dataList{
+    margin: 20px;
+}
+.maindata{
+    border: .5px solid black;
+    border-radius: 5px;
+}
+.lableList{
+    font-weight: bold;
+}

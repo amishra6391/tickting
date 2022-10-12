@@ -1,0 +1,43 @@
+.widget{
+    color: black;
+    justify-content: space-between;
+    display: flex;
+    flex: 1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 10px;
+    height: 100px;
+}
+.spanTick{
+    margin: 0;
+    font-size: 25px;
+    font-weight: 350;
+    margin-left: 10px;
+    
+}
+.percentage{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    
+}
+.iconTota{
+    margin-bottom: 50px;
+    /* justify-content: space-between; */
+}
+.negatic{
+    color: red;    
+}
+.positiv{
+    color: green;
+}
+.userlogo{
+    background-color: black;
+    font-size: large;
+    border-radius: 2px;
+    color: white;
+}
+.total,.link{
+    color: rgb(97, 89, 89);
+    font-size: medium;
+    margin: 10px;
+}

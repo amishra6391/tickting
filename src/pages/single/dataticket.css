@@ -1,0 +1,36 @@
+.dataTicket{
+    height: 500px;
+}
+.cellAation{
+    display: flex;
+    font-size: 22px;
+    gap: 7px;
+}
+.ticketStatus{
+    padding: 10px;
+    width: 100%;
+    font-size: auto;
+    text-align: center;
+    text-transform: capitalize;
+}   
+.replyTo,.delete{
+    color: green;
+    margin: 10px;
+    cursor: pointer;
+}
+.delete{
+    color: rgb(167, 32, 32);
+}
+.done{
+    background-color: #215f210d;
+    color: green;
+}
+.pending{
+    background-color: #215f210d;
+    color:goldenrod;
+    
+}
+.rejected{
+    color: red;
+    background-color: #215f210d;
+}
