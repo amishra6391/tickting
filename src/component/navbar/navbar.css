@@ -30,7 +30,6 @@
     display: flex;
     margin-bottom: 25px;
     justify-content:center ;
-    display: flex;
     background-color: black;
     color: white;
     margin-left:-5px ;
@@ -48,7 +47,7 @@
     padding: 3px;
     cursor: pointer;
 }
-input{
+.input{
     border: none;
     /* outline none remove  the border outline when user click on the input feald
       */
@@ -59,4 +58,12 @@ input{
     color: green;
     margin-left: 5px;
     font-size: large;
+}
+@media screen and (max-width:750px) {
+   .none{
+    display: none;
+   }
+   .input{
+    width: auto;
+   }
 }

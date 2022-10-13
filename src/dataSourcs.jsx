@@ -2,31 +2,31 @@
     {
         field: 'id', 
         headerName: 'ID', 
-        width: 70 
-    },
-    {
-        field: 'Name', 
-        headerName: 'Name', 
-        width: 130 
-    },
-    {
-        field: "Email", 
-        headerName: "Email Id",
-        width:140
+        width: 20,
     },
     {
         field: 'Ticket', 
-        headerName: 'Ticket Type', 
-        width:140 
-    },
-        {
-        field: 'Message',
-        headerName: 'Message',
-        width: 280,
+        headerName: 'Subject', 
+        width:190,
     },
     {
+        field: 'Name', 
+        headerName: 'Requester', 
+        width: 130,
+    },
+    // {
+    //     field: "Email", 
+    //     headerName: "Email Id",
+    //     width:280
+    // },
+    // {
+    //     field: 'Message',
+    //     headerName: 'Message',
+    //     width: 280,
+    // },
+    {
         field: 'status',
-        headerName: 'Status',
+        headerName: 'Requested',
         width: 90,
         renderCell:(prompt)=>{
             return(                

@@ -1,6 +1,6 @@
 import React from "react";
 import {AiFillHome,AiFillSetting} from "react-icons/ai";
-import {HiChatAlt2,} from "react-icons/hi";
+import {HiChatAlt2, HiOutlineMenu} from "react-icons/hi";
 import {ImProfile} from "react-icons/im";
 import {FaTicketAlt} from "react-icons/fa";
 import {MdOutlineNotificationsActive} from "react-icons/md";
@@ -16,29 +16,31 @@ import './sidebar.css';
                     </div>
                     <hr/>
                     <div className="center">
-                        <ul>
+                        <ul className="ulli_class">
+                        <Link to="/" style={{ textDecoration: "none" }}>
                             <li>
-                            <Link to="/" style={{ textDecoration: "none" }}>
                                     <AiFillHome className="icons"/>
-                                    <span>Dashbord</span>
-                            </Link>
+                                    <span className="noneDisplay">Dashbord</span>
                             </li>
-                            <li>
+                            </Link>
                             <Link to="/users/Ticket">
-                            <FaTicketAlt className="icons"/>
-                                 <span>Ticket</span>
-                            </Link>
-                            </li>
                             <li>
-                                <Link to="/users">
+                            
+                            <FaTicketAlt className="icons"/>
+                                 <span className="noneDisplay">Ticket</span>
+                                 </li>
+                            </Link>
+                            <Link to="/users">
+                                <li>
                                 <ImProfile className="icons"/>
-                                    <span>Profiles</span>
+                                    <span className="noneDisplay">Profiles</span>
+                                </li>
                                 </Link>
-                            </li>
-                            <li><HiChatAlt2  className="icons"/><span>Chat</span></li>
-                            <li><MdOutlineNotificationsActive  className="icons"/><span>Notifications</span></li>
-                            <li><AiFillSetting className="icons"/><span>Settinges</span></li>
-                            <li><BiLogOutCircle  className="icons"/><span>LogOut</span></li>
+                            
+                            <li><HiChatAlt2  className="icons"/><span className="noneDisplay">Chat</span></li>
+                            <li><MdOutlineNotificationsActive  className="icons"/><span className="noneDisplay">Notifications</span></li>
+                            <li><AiFillSetting className="icons"/><span className="noneDisplay">Settinges</span></li>
+                            <li><BiLogOutCircle  className="icons"/><span className="noneDisplay">LogOut</span></li>
                         </ul>
                     </div>
                     {/* <div className="bottom">color option</div> */}

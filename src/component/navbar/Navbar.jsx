@@ -11,18 +11,18 @@ import {FiMessageSquare} from "react-icons/fi";
                 <div className="navbar">
                    <div className="wrapper">
                     <div className="serch">
-                        <input type="text" placeholder="search..."/><BsSearch className="searchLogo"/>
+                        <input type="text" className="input" placeholder="search..."/><BsSearch className="searchLogo"/>
                     </div>
                     <div className="items">
-                        <div className="item">
+                        <div className="item none">
                             <MdOutlineNotificationsActive />
                             <div className="counter">1</div>
                         </div>
-                        <div className="item">
+                        <div className="item none">
                             <FiMessageSquare/>
                             <div className="counter">5</div>
                         </div>
-                        <div className="item">
+                        <div className="item none">
                             <AiOutlineMenu/>
                         </div>
                         <div className="item">

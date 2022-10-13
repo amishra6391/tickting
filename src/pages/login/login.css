@@ -9,11 +9,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #c9c9f1;
+    background-color: #d9d9eb;
     height: 300px;
     width: 450px;
     border-radius: 3px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: -1px 5px 18px -6px rgba(0,0,0,1);
 }
 .loginh1{
     margin: 25px;
@@ -21,10 +21,11 @@
 .inputLogin,.Loginbtm{
     width: 200px;
     height: 30px;
+    margin: 5px;
     margin: 10px;
     font-size: large;
-    border: .5px solid black;
-    
+    border-radius: 2px;
+    border: .5px solid black;   
 }
 .Loginbtm{
     border: none;
@@ -57,4 +58,22 @@
 }
 a{
     text-decoration: none;
+}
+@media screen and (max-width:750px) {
+    .login2{
+           
+    }
+    .formLogin{
+        width: 90%;
+        height: 100%;
+        border: 1px solid red;
+        justify-content: center;
+    }
+    .loginh1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .inputLogin,.Loginbtm{
+        width: 80%;
+    }
 }

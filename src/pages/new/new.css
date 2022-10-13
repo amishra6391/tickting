@@ -65,3 +65,14 @@ h2{
     cursor: pointer;
     margin: 20px;
 }
+@media screen and (max-width:750px) {
+    .formInput{
+        width: 100%;
+    }
+    .newContaner{
+        flex: 3;
+    }
+    .btnNew{
+        width: 100%;
+    }
+}
