@@ -1,40 +1,62 @@
-.dataTicket{
-    height: 500px;
+.table{
+	width: 100%;
+	border-collapse: collapse;
+    margin-top: 50px;
 }
-.cellAation{
-    text-transform: capitalize;
-    margin-left: 25px;
+.table td,.table th{
+  padding:12px 15px;
+  border-bottom:1px solid #ddd;
+  text-align: center;
+  font-size:13px;
 }
-.ticketStatus{
-    padding: 10px;
-    width: 100%;
-    font-size: auto;
-    text-align: center;
-    text-transform: capitalize;
-}   
-.replyTo,.delete{
-    color: green;
-    margin: 10px;
-    cursor: pointer;
+.table td{
+	cursor: pointer;
 }
-.delete{
-    color: rgb(167, 32, 32);
+.btnData{
+	padding: 3px;
+	gap: 3px;
+	font-size: medium;
 }
-.done{
-    background-color: #215f210d;
-    color: green;
+.del{
+	color: red;
 }
-.pending{
-    background-color: #215f210d;
-    color:goldenrod;
-    
+.reply{
+	color: green;
 }
-.rejected{
-    color: red;
-    background-color: #215f210d;
+.table tbody tr:nth-child(even){
+	background-color: #f5f5f5;
 }
-@media screen and (max-width:750px) {
-   .DataGrid{
-  font-size: small;
-   }
+@media(max-width: 750px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 85%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+		width: 100%;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 100%;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+	.table tbody tr:nth-child(even){
+		
+	}
 }

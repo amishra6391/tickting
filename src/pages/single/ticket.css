@@ -1,0 +1,17 @@
+.newTicket{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+}
+.btnAddticket{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border-width: 1px solid black;
+    
+}
+.addlogo{
+    font-size: x-large;
+    color: green;
+}

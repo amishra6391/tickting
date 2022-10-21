@@ -13,7 +13,7 @@ import { useNavigate, Link} from "react-router-dom";
         const gotoHome=()=>{
             navitage("/");
         }
-            const handleLogin=(e,action)=>{
+            const handleLogin=(e)=>{
                 e.preventDefault();
                  signInWithEmailAndPassword (auth, email, password)
                     .then((userCredential) => {
@@ -46,7 +46,7 @@ import { useNavigate, Link} from "react-router-dom";
                     />
                     {error &&<p className="loginSpan">Wrong Email or Password</p>}
                     <button className="Loginbtm">Login</button>
-                    <p>Create new <Link to="/New">Account</Link></p>
+                    <p><Link to="/New" className="gotolink">Create account</Link></p>
                 </form>
                 </div>
             </div>

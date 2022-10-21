@@ -2,18 +2,28 @@
     flex: 1;
     border: 0.5px solid  rgb(230,227,227);
     min-height: 100vh;
-    background-color: white;  
+    background-color: black;
+    color: #ffffffcc;  
 }
 .top{
     height: 50px;
     align-items: center;
+    background-color: white;
     display: flex;
     justify-content: center;
+    background-size: 90% 90%;
+    background-repeat: no-repeat;
+    background-image: url('https://www.nit-infotech.com/wp-content/uploads/2020/03/nit-infotech.png');
 }
-.logo{
-    font-size: 20px;
-    font-weight: bold;
-    color: #9374c9;
+.menu{
+    float: right;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    background-color:  rgb(43, 41, 41);;
+    margin-top: 20px;
+    color: white;
+    border-radius: 50%;
 }
 .dropdownIcon{
     display: none;
@@ -36,26 +46,32 @@ li{
     padding: 8px;
     cursor: pointer;
     margin: 5px;
+    color: #ffffffcc;
 }
-li:hover{
-    background-color: rgb(187, 181, 181);
+.menu:hover,li:hover{
+    background-color: rgb(43, 41, 41);
+    color: #669Df6;
+    
 }
 .icons{
-    font-size: 18px;
-    color: #7451f8;
+    font-size:20px;
 }
 span{
     margin-left: 15px;
     font-size: 18px;
     font-weight: 600;
-    /* color: #cab8e7; */
 }
 @media screen and (max-width:750px) {
     .sidebar{
         flex: 0;
         border: none;
         min-height: 100vh;
-        background-color: rgb(241, 239, 239);  
+    }
+    .icons{
+        font-size:25px;
+    }
+    .menu{
+        display: none;
     }
     .noneDisplay{
         display: none;
@@ -64,11 +80,8 @@ span{
         padding-left: 3px;
     }
     .top{
-         margin-right: 15px;
-    }
-    .logo{
-        font-size: 15px;
-        font-weight: bold;
-        color: black;
+         width: 60px;
+         height: 50px;
+         background-image: url('/public/nitimg.png');
     }
 }

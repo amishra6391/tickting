@@ -8,7 +8,6 @@ import swal from 'sweetalert';
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
-
     const New=({inputes})=>{
         const [file, setFiles]=useState("");
         const [data, setData]=useState({});
@@ -114,7 +113,7 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
                                  ))}
                                 <button className="btnNew"
                                 type="submit">Submit</button>
-                                <p className="plogin">already have an account ? <Link to="/Login"> Login</Link></p>
+                                <p className="plogin"><Link to="/Login" className="gotolink">Sign in</Link></p>
                             </form>
                         </div>
                     </div>

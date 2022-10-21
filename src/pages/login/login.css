@@ -9,14 +9,15 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #d9d9eb;
-    height: 300px;
-    width: 450px;
+    background-color: white;
+    height: 330px;
+    width: 350px;
     border-radius: 3px;
-    box-shadow: -1px 5px 18px -6px rgba(0,0,0,1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .loginh1{
     margin: 25px;
+    font-weight: 400;
 }
 .inputLogin,.Loginbtm{
     width: 200px;
@@ -29,6 +30,7 @@
 }
 .Loginbtm{
     border: none;
+    /* width: 50%; */
     background-color: green;
     color: white;
     letter-spacing: 2px;
@@ -37,6 +39,17 @@
     border-radius: 3px;
     margin-top: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.gotolink{
+    margin-top: 20px;
+    color: #1A73EB;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.gotolink:hover{
+    background-color: #e4eaf1;
+    padding: 7px;
+    border-radius: 2px;
 }
 .Loginbtm:hover{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;

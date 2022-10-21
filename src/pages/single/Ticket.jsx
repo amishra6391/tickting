@@ -5,6 +5,7 @@ import Navbar from "../../component/navbar/Navbar.jsx";
 import DataTicket from "./DataTicket";
 
 
+
     const Ticket=()=>{
         return(
             <>
@@ -12,7 +13,7 @@ import DataTicket from "./DataTicket";
                 <Sidebar/>
                 <div className="homeContainer">
                     <Navbar/>
-                    <DataTicket/>
+                    <DataTicket/> 
                 </div>
                 </div>
             </>

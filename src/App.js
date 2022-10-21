@@ -5,6 +5,8 @@ import List from "./pages/list/List.jsx";
 import Ticket from "./pages/single/Ticket.jsx";
 import New from "./pages/new/New.jsx";
 import {userInputs, productInputs} from "./formSource.jsx";
+import SendEmail from "./sendMail/SendEmail.jsx";
+import CreateTicket from "./pages/single/CreateTicket.jsx";
 function App() {
   //  this line of code help to Restrict to user login first then you can go other page
     const currentUser= false;
@@ -23,7 +25,8 @@ function App() {
             <Route path="users">
               <Route index element={<List/>}/>
               <Route path=":userId" element={<Ticket/>}/>
-              
+              <Route path="SendEmail" element={<SendEmail/>}/>
+              <Route path="CreateTicket" element={<CreateTicket/>}/>
             </Route>
             <Route path="products">
               <Route index element={<List/>}/>

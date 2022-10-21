@@ -1,6 +1,7 @@
 import React from "react";
 import {AiFillHome,AiFillSetting} from "react-icons/ai";
-import {HiChatAlt2, HiOutlineMenu} from "react-icons/hi";
+import {HiChatAlt2} from "react-icons/hi";
+import {IoIosArrowForward} from 'react-icons/io';
 import {ImProfile} from "react-icons/im";
 import {FaTicketAlt} from "react-icons/fa";
 import {MdOutlineNotificationsActive} from "react-icons/md";
@@ -8,14 +9,21 @@ import {Link} from "react-router-dom"
 import {BiLogOutCircle} from "react-icons/bi";
 import './sidebar.css';
     const Sidebar=()=>{
+        const showhide=()=>{
+            
+        }
         return(
             <>
                 <div className="sidebar">
                     <div className="top">
-                        <span className="logo">NIT</span>
+                         {/*
+                                do not remove top className div because logo of the company set here with 
+                                the help of the csss
+                        */}
                     </div>
                     <hr/>
                     <div className="center">
+                        
                         <ul className="ulli_class">
                         <Link to="/" style={{ textDecoration: "none" }}>
                             <li>
@@ -43,7 +51,7 @@ import './sidebar.css';
                             <li><BiLogOutCircle  className="icons"/><span className="noneDisplay">LogOut</span></li>
                         </ul>
                     </div>
-                    {/* <div className="bottom">color option</div> */}
+                    <button className="menu" onClick={showhide}><IoIosArrowForward/></button>
                 </div>
             </>
         );
