@@ -5,6 +5,7 @@ import {collection, serverTimestamp, addDoc} from "firebase/firestore";
 import {db} from "../../firebase";
 import Navbar from "../../component/navbar/Navbar";
 import Sidebar from "../../component/sidebar/Sidebar";
+import TextField from '@mui/material/TextField';
 import { HiOutlineReply } from 'react-icons/hi'
 import { useNavigate } from "react-router-dom";
     const CreateTicket=()=>{

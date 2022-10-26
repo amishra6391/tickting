@@ -38,7 +38,7 @@ import {MdAdd} from 'react-icons/md'
 	 
 		{	
 			details.map((tbdata)=>{
-				const {id,subject,Requester,sendDateTime,Priority}=tbdata;
+				const {id,subject,Requester,Priority}=tbdata;
 				return(
 					<>
 						<tr>
@@ -46,7 +46,7 @@ import {MdAdd} from 'react-icons/md'
 						<td data-label="S.No">#{id}</td>
 						<td data-label="Subject">{subject}</td>
 						<td data-label="Requester">{Requester}</td>
-						<td data-label="Requested">{sendDateTime}</td>
+						<td data-label="Requested"></td>
 						<td data-label="Priority">{Priority}</td>
 						<td data-label="Assigneed"><button className="btnData reply"> <Link to="../SendEmail"><RiShareForwardFill/></Link></button>
 						<button className="btnData del"><RiDeleteBin7Line/></button>

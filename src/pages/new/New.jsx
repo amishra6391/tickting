@@ -5,6 +5,7 @@ import {  doc, serverTimestamp, setDoc } from "firebase/firestore";
 import {auth, db, storage} from "../../firebase";
 import {Link} from "react-router-dom";
 import swal from 'sweetalert';
+import TextField from '@mui/material/TextField';
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
@@ -101,19 +102,19 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
                                 {
                                  inputes.map((input)=>(
                                     <div className="formInput" key={input.id}>
-                                    <label>{input.label}</label>
-                                    <input type={input.type}
+                                    <TextField
+                                    label={input.label}
                                      id={input.id}
-                                     placeholder={input.placeholder}
+                                     type={input.type}
                                      onChange={handleInput}
-                                    className="inpNew"
-                                    required
+                                    className="inpNew"   
+                                    autoComplete="off"
                                     />
                                 </div>
                                  ))}
                                 <button className="btnNew"
                                 type="submit">Submit</button>
-                                <p className="plogin"><Link to="/Login" className="gotolink">Sign in</Link></p>
+                                <p className="plogin">already have an account login<Link to="/Login" className="gotolink">Sign in</Link></p>
                             </form>
                         </div>
                     </div>

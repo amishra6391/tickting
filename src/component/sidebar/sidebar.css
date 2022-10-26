@@ -74,6 +74,7 @@ span{
         display: none;
     }
     .noneDisplay{
+        transition: all 0.9s;
         display: none;
     }
     .center{

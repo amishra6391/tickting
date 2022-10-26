@@ -15,7 +15,7 @@ export const userInputs = [
     {
       id: "lastname",
       label: "Last Name",
-      type: "text",
+      // type: "text",
       placeholder: "Last Name",
     },
     {

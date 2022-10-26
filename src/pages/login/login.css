@@ -10,7 +10,7 @@
     align-items: center;
     flex-direction: column;
     background-color: white;
-    height: 330px;
+    height: 350px;
     width: 350px;
     border-radius: 3px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -19,37 +19,41 @@
     margin: 25px;
     font-weight: 400;
 }
-.inputLogin,.Loginbtm{
-    width: 200px;
+.loginlab{
+    margin-left: -130px;
+}
+.Loginbtm{
     height: 30px;
-    margin: 5px;
-    margin: 10px;
+    width: 80%;
     font-size: large;
-    border-radius: 2px;
-    border: .5px solid black;   
+    outline: none;
+    margin-top: 30px;
+}
+.loginlab{
+    position: relative;
+    width: 110px;
+}
+.inputLogin{
+    width: 80%;
+    padding: 20px;
 }
 .Loginbtm{
     border: none;
-    /* width: 50%; */
     background-color: green;
     color: white;
     letter-spacing: 2px;
     cursor: pointer;
     font-family:Arial, Helvetica, sans-serif;
     border-radius: 3px;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .gotolink{
-    margin-top: 20px;
+    margin-top: 100px;
     color: #1A73EB;
     font-weight: 600;
     letter-spacing: 1.5px;
-}
-.gotolink:hover{
-    background-color: #e4eaf1;
-    padding: 7px;
-    border-radius: 2px;
 }
 .Loginbtm:hover{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -73,8 +77,8 @@ a{
     text-decoration: none;
 }
 @media screen and (max-width:750px) {
-    .login2{
-           
+    .loginlab{
+        margin-left: -170px;
     }
     .formLogin{
         width: 90%;
@@ -88,5 +92,8 @@ a{
     }
     .inputLogin,.Loginbtm{
         width: 80%;
+    }
+    .gotolink{
+        margin-bottom:30px;
     }
 }
