@@ -1,3 +1,4 @@
+//  this line of code help tho the 
 import React, { useState } from "react";
 import './login.css';
 import { signInWithEmailAndPassword } from "firebase/auth"; // this method is import to perform the signin operation to user
@@ -11,15 +12,17 @@ import { TextField } from "@mui/material";
         const [email, setEmail] = useState("");
         const [password, setPassword] = useState("");
         const navitage= useNavigate();
+        document.title=`Login`;
         const gotoHome=()=>{
             navitage("/");
         }
+        
             const handleLogin=(e)=>{
                 e.preventDefault();
                  signInWithEmailAndPassword (auth, email, password)
                     .then((userCredential) => {
                         const user = userCredential.user;
-                        console.log(user)
+                        console.log(user.uid)
                         swal("Login", "Successful", "success");
                         gotoHome();
                     })
@@ -33,9 +36,8 @@ import { TextField } from "@mui/material";
         <>
              <div className="loging">
                 <div className="login2">
-                
                 <form onSubmit={handleLogin} className="formLogin">
-                <h1 className="loginh1">Login your Account</h1>
+                <h1 className="loginh1">Login</h1>
                 {/* with the help of  @mui/material be cam create the ui like the google logoin input feauld 
                 and if you want to use the meterialui then you need to import and install @mui/material package*/}
                     <TextField id="outlined-basic" label="User Id" variant="outlined"  autoComplete="off" className="inputLogin"

@@ -5,6 +5,7 @@ import Sidebar from '../component/sidebar/Sidebar.jsx';
 import Navbar from  '../component/navbar/Navbar.jsx';
 import Textbox from "./Textbox";
     const SendEmail=()=>{
+        document.title=`Message`
         return(
             <>
                 <div className="home">

@@ -5,13 +5,13 @@ import {collection, serverTimestamp, addDoc} from "firebase/firestore";
 import {db} from "../../firebase";
 import Navbar from "../../component/navbar/Navbar";
 import Sidebar from "../../component/sidebar/Sidebar";
-import TextField from '@mui/material/TextField';
 import { HiOutlineReply } from 'react-icons/hi'
 import { useNavigate } from "react-router-dom";
     const CreateTicket=()=>{
         const navigateTo= useNavigate();
+        document.title=`New Tickets`;
         const [newticket,setNewticket]=useState({
-            subject:"",email:"",inputfe:"",
+            subject:"",email:"",cc:"",inputfe:"",
         });
         let name,value;
         const handleInputs=(e)=>{
@@ -43,11 +43,11 @@ import { useNavigate } from "react-router-dom";
                         <div className="homeContainer">
                             <Navbar/>
                                 <div className="mainCreateTi">
-                                <div className="showNew"><b>New</b> Tickets</div>
+                                <div className="showNew"><b className="creTB">New</b> Tickets</div>
                                     <form onSubmit={sendEmainandFB}>
                                         <div className="subject">
                                             <input type="text" placeholder="Subject" className="ticketSubj" 
-                                                name="subject" id="subject"  value={newticket.subject} onChange={handleInputs} required
+                                                name="subject" id="subject"  value={newticket.subject} onChange={handleInputs} required autoComplete="off"
                                             />
                                         </div>
                                         <div className="createTicketSpace">
@@ -55,8 +55,11 @@ import { useNavigate } from "react-router-dom";
                                         </div>
                                         <div className="border">
                                             <div className="public"><HiOutlineReply/> Public Reply <span className="to">TO 
-                                                <span className="sendToEm"><input type='email' placeholder="Email" className="emaile"
+                                                <span className="sendToEm"><input type='email' placeholder="Email" className="emaile" required
                                                     name="email" id="email" value={newticket.email} onChange={handleInputs}
+                                                />
+                                                <input type='email' placeholder="CC" className="emaile"
+                                                    name="cc" id="cc" value={newticket.cc} onChange={handleInputs}
                                                 />
                                                 </span></span>
                                             </div>

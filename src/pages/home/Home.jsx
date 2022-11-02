@@ -4,6 +4,7 @@ import Sidebar from "../../component/sidebar/Sidebar";
 import Totaltick from "../../component/Totaltick.jsx";
 import './home.css';
     const Home=()=>{
+        document.title=`Home`
         return(
             <>
             <div className="home">
@@ -17,8 +18,6 @@ import './home.css';
                         
                     </div>
                 </div>
-                
-
             </div>
             </>
         );

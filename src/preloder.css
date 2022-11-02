@@ -1,0 +1,28 @@
+.main_div{
+    display: grid;
+    place-items:center;  
+}
+.center_div{
+    width:60vw;
+    height:60vh;
+    display: grid;
+    place-items:center;
+    border-radius:2px;
+}
+.loder{
+    width:5rem;
+    height: 5rem;
+    background:transparent;
+    border: .5rem solid rgb(141, 167, 141);
+    border-top: .5rem solid rgb(212, 210, 205);
+    border-radius: 50%;
+    animation: loders 1.5s linear infinite;
+}
+@keyframes loders{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

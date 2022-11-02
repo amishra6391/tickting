@@ -4,6 +4,7 @@ import React from "react";
 import './totaltick.css'
     const Totaltick=({type})=>{
         let data;
+        console.log(data)
         switch(type){
             case "totalTicket":
             data={
@@ -23,7 +24,7 @@ import './totaltick.css'
                     data={
                         total:"Balance",
                         isMemory:true,
-                        linl:" See  balance Tickt  ",
+                        linl:"See balance Tickt",
                     };
                     break;
 

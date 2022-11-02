@@ -3,9 +3,9 @@
     padding: 10px;
 }
 .emaile{
-    border: none;
-    outline: none;
-    border-radius: 10px;  
+    /* border: none; */
+    /* outline: none; */
+    /* border-radius: 10px;   */
 }
 .showNew{
     background-color: #E9EBED;
@@ -20,7 +20,7 @@
     border: .5px solid rgb(196, 194, 194);
     cursor: pointer;
 }
-b{
+.creTB{
     background: #FFB648;
     color: #703B15;
     padding: 2px;

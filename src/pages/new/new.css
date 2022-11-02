@@ -42,7 +42,7 @@ h2{
 .iconNew{
     cursor: pointer;
     font-size: 25px;
-    color: rgb(11, 11, 66);
+    color: red;
 }
 .inpNew{
     width: 100%;

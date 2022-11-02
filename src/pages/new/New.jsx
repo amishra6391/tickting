@@ -12,11 +12,13 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
     const New=({inputes})=>{
         const [file, setFiles]=useState("");
         const [data, setData]=useState({});
+        document.title=`Registration`
         // thia line of code help to uplode the file on the on the firebase storeg data base;
         useEffect(()=>{
           const uplodeFile=()=>{
             //      this line of code help to change the file name based on the time 
             const name=new Date().getTime()+file.name;
+            console.log(name)
           }
           const storageRef = ref(storage, 'images/rivers.jpg');
           const uploadTask = uploadBytesResumable(storageRef, file);
@@ -36,13 +38,17 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
                     break;
                 }
               }, 
-              //      this help to display the error on the console 
+
+              //this help to display the error on the console
+
               (error) => {
                 console.log(error);
               }, 
               () => {
-                getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+                getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) =>{
+
                 // this line of code the provide the uid of authentication and cloude feauld;
+
                   setData((prev)=>({...prev,img:downloadURL}));
                 });
               }
@@ -54,15 +60,16 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
         const handleInput=(e)=>{
           const id = e.target.id;
           const value =e.target.value;
-
           setData({...data, [id]:value});
         }; 
         console.log(data)
         const handleAdd= async(e)=>{
           e.preventDefault()
           try{
+            // this line of code send the data in Authentication database and take there uid into the res varible 
             const res= await createUserWithEmailAndPassword(auth, data.email,data.password)
-            await setDoc(doc(db,"cities",res.user.uid),{
+            // res res.user.uid stored send same uid to the registration data feaulde
+            await setDoc(doc(db,"Registration",res.user.uid),{
               ...data,
               sendDataTime:serverTimestamp(),
 
@@ -114,7 +121,7 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
                                  ))}
                                 <button className="btnNew"
                                 type="submit">Submit</button>
-                                <p className="plogin">already have an account login<Link to="/Login" className="gotolink">Sign in</Link></p>
+                                <p className="plogin">already have an account login<Link to="/Login" className="gotolink"> Sign in</Link></p>
                             </form>
                         </div>
                     </div>
